@@ -1,4 +1,41 @@
-body {
-    background-color: burlywood;
-    font-family: 'Courier New', Courier, monospace;
+body{
+    position: relative;
+    background-color:white;
+    color: #555;
+    font-family: "Open Sans","Verdana","sans-serif"
+}
+.jumbotron {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGhI0tMnM9cg3vbMnf-y9QHff7DC99cGupcq5C_jzUI8MLPprs");
+    background-color: grey;
+    font-style: inherit;
+    background-position: 0% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+p1{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightblue;
+}
+
+.col-sm-4 {
+    background-color: lightblue;
+    color: lightblue;
+    font-stretch: expanded;
+}
+.well {
+    background:gray;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.footer {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: auto;
 }

@@ -2,13 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>Living Dashboard</title>
+    <title>Endcap</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./javascript/jquery-ui-1.12.1.custom/jquery-ui.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
     <style>
         .fakeimg {
             height: 200px;
@@ -16,10 +20,11 @@
         }
     </style>
 </head>
+
 <body>
     <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>Living Dashboard</h1>
-        <p>Give us a visit before you move into your new home or apartment!</p>
+        <h1>Endcap</h1>
+        <p1>"See beyond the edges" in every neighorhood.</p1>
     </div>
 
     <nav class="navbar navbar-inverse">
@@ -30,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Living Dashboard</a>
+                <a class="navbar-brand" href="#">Endcap</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -48,12 +53,47 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <h2>About us</h2>
-                <h5>Photo of something:</h5>
-                <div class="fakeimg"> Image</div>
-                <p>Some text about us can go here..</p>
-                <h3>Some Links</h3>
-                <p>Project 1</p>
+                <h3>Our team</h3>
+                <div class="well">
+                    <div id="accordion">
+                        <h3>Marc</h3>
+                        <div>
+                            <p>
+                                Marc enjoys long walks on the beach.
+                            </p>
+                        </div>
+                        <h3>Aman</h3>
+                        <div>
+                            <p>
+                                Aman enjoys watching marc take long walks on the beach
+                            </p>
+                        </div>
+                        <h3>Kathrin</h3>
+                        <div>
+                            <p>
+                                Kathrin is still looking for a beach in vegas
+                            </p>
+                            <ul>
+                                <li>She looked under the hoover dam</li>
+                                <li>She looked over the hoover dam</li>
+                                <li>She even looked inside a casino named 'beach'</li>
+                            </ul>
+                        </div>
+                        <h3>Alex</h3>
+                        <div>
+                            <p>
+                                Alex thinks life's a beach
+                            </p>
+                            <p>
+                                He is eating at beach hut deli for lunch
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <p>Interested in other pieces to this puzzle?</p>
+                <h3>Try these:</h3>
+                <p></p>
                 <ul class="nav nav-pills nav-stacked">
                     <li class="active">
                         <a href="#">Link 1</a>
@@ -66,22 +106,51 @@
                     </li>
                 </ul>
                 <hr class="hidden-sm hidden-md hidden-lg">
+
             </div>
             <div class="col-sm-8">
-                <h2>Google Maps</h2>
-                <div class="fakeimg">Image</div>
-                <p>Some text..</p>
+                <h2>Where you'll be...</h2>
+                <label for="lat">Latitude</label>
+                <input id="lat" name="lat" value="44.797">
                 <br>
-                <h2>TITLE HEADING</h2>
-                <h5>Title description</h5>
-                <div class="fakeimg">Fake Image</div>
-                <p>Some text..</p>
-                <p> With living Dashboard you can make better decisions when it comes to moving to a new place. Find out for yourself if new place is worth moving into.</p>
+                <label for="lng">Longitude</label>
+                <input id="lng" name="lng" value="-93.278">
+
+                <div id="map"></div>
+                <div class="fakeimg">Google maps</div>
+                <p>Where is this place you'll go?</p>
+                <br>
+                <h2>End-score</h2>
+                <h5>Click the buttons to see if there's more to this place</h5>
+                <div class="fluid-container">
+
+                    <div>
+                        <div class="widget">
+                            <h1>Widget</h1>
+                            <button>Button with only text</button>
+                            <button>Button with icon only</button>
+                            <button>Button with icon on the left</button>
+                            <button>Button with icon on the right</button>
+                            <button>Button with icon on the top</button>
+                            <button>Button with icon on the bottom</button>
+                        </div>
+                        <canvas id="polar-chart" width="auto" height="auto"></canvas>
+
+                    </div>
+                    <div class="fluid-container well" id="slider"></div>
+                </div>
+
+                <p>Here or there...</p>
+                <p>Find stories that will peak your interest...</p>
             </div>
         </div>
     </div>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <p>Group Project 1</p>
+    <div class="footer">
+        <p>Copyright @ 2018 Living Dashboard</p>
     </div>
+
+    <script type="text/javascript" src="./javascript/apptest2.js"></script>
+
 </body>
+
 </html>
