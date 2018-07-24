@@ -1,0 +1,66 @@
+body{
+    position: relative;
+    background-color:orange;
+    color: black;
+    font-family: "Open Sans","Verdana","sans-serif"
+}
+.jumbotron {
+    background-image: url("http://www.monaco-chicago.com/images/1700-960/chicago-skyline-f81e26ea.jpg");
+    background-color: orange;
+    font-style: inherit;
+    background-position: 0% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: xx-large;
+    
+}
+* {
+	box-sizing: border-box;
+}
+p1{
+    font-weight: bolder;
+    font-size: xx-large;
+    color: whitesmoke;
+}
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    margin: auto;
+}
+
+.col-sm-4 {
+    background-color: orange;
+    color: orange;
+    font-stretch: expanded;
+}
+.col-sm-8 {
+    background-color: orange;
+    margin-bottom: auto;
+}
+.well {
+    background:orange;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.footer {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+#slider{
+    background-color: black;
+}
+#accordion{
+    background-color: black;
+    background-clip: border-box;
+}
+#container {
+	min-height:auto;
+}
+.nav-item{
+    float: right;
+}
+
+

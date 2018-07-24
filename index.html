@@ -6,23 +6,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="./javascript/jquery-ui-1.12.1.custom/jquery-ui.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-    <style>
-        .fakeimg {
-            height: 200px;
-            background: #aaa;
-        }
-    </style>
 </head>
 
 <body>
     <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>endcap</h1>
-        <p>"See beyond the edges" in every neighorhood.</p>
+        <h1>Living Dashboard</h1>
+        <p1>"See beyond the edges" in every neighorhood.</p1>
     </div>
 
     <nav class="navbar navbar-inverse">
@@ -33,15 +29,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">endcap</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">Dashboard</a>
+                        <a href="contact.html">Contact Us </a>
                     </li>
                 </ul>
             </div>
@@ -51,103 +46,76 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <h3>about the authors</h3>
+                <h3>Our team</h3>
                 <div class="well">
                     <div id="accordion">
-                        <h3>marc</h3>
+                        <h3>What’s Your Neighborhood Walk Score?</h3>
                         <div>
                             <p>
-                                marc enjoys long walks on the beach.
+                                Walk Score helps you find a walkable place to live.Find out your walk score.
                             </p>
                         </div>
-                        <h3>aman</h3>
+                        <h3>Transportability Score</h3>
                         <div>
                             <p>
-                                aman enjoys watching marc take long walks on the beach
+                                Find out your transportability score in the area.
                             </p>
                         </div>
-                        <h3>kathrin</h3>
+                        <h3>Bikeability Score</h3>
                         <div>
                             <p>
-                                kathrin is still looking for a beach in vegas
-                            </p>
-                            <ul>
-                                <li>she looked under the hoover dam</li>
-                                <li>she looked over the hoover dam</li>
-                                <li>she even looked inside a casino named 'beach'</li>
-                            </ul>
-                        </div>
-                        <h3>alex</h3>
-                        <div>
-                            <p>
-                                alex thinks life's a beach
-                            </p>
-                            <p>
-                                he is eating at beach hut deli for lunch
+                                How Bikeable Is Your City? Find Out With Us.
                             </p>
                         </div>
                     </div>
-
                 </div>
                 <p>Interested in other pieces to this puzzle?</p>
-                <h3>try these:</h3>
+                <h3>Try these:</h3>
                 <p></p>
-                <ul class="nav nav-pills nav-stacked">
-                    <li class="active">
-                        <a href="#">Link 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Link 3</a>
-                    </li>
-                </ul>
-                <hr class="hidden-sm hidden-md hidden-lg">
-
             </div>
             <div class="col-sm-8">
-                <h2>where you'll be...</h2>
-                <label for="lat">Latitude</label>
-                <input id="lat" name="lat" value="44.797">
-                <br>
-                <label for="lng">Longitude</label>
-                <input id="lng" name="lng" value="-93.278">
+                <div id="where">
+                    <h2>Where you'll be...</h2>
+                    <label for="lat">Latitude</label>
+                    <input id="lat" name="lat" value="44.797">
+                    <br>
+                    <label for="lng">Longitude</label>
+                    <input id="lng" name="lng" value="-93.278">
 
-                <div id="map"></div>
-                <div class="fakeimg">google maps</div>
-                <p>where is this place you'll go?</p>
-                <br>
-                <h2>end-score</h2>
-                <h5>click the buttons to see if there's more to this place</h5>
-                <div class="fluid-container">
+                    <div id="map"></div>
+                    <div class="fakeimg">Google maps</div>
+                    <p>Where is this place you'll go?</p>
+                    <br>
+                    <h2>End-score</h2>
+                    <h5>Click the buttons to see if there's more to this place</h5>
+                    <div class="fluid-container">
 
-                    <div>
-                        <div class="widget">
-                            <h1>Widget</h1>
-                            <button>Button with only text</button>
-                            <button>Button with icon only</button>
-                            <button>Button with icon on the left</button>
-                            <button>Button with icon on the right</button>
-                            <button>Button with icon on the top</button>
-                            <button>Button with icon on the bottom</button>
+                        <div>
+                            <div class="widget">
+                                <h1>Widget</h1>
+                                <button>Button with only text</button>
+                                <button>Button with icon only</button>
+                                <button>Button with icon on the left</button>
+                                <button>Button with icon on the right</button>
+                                <button>Button with icon on the top</button>
+                                <button>Button with icon on the bottom</button>
+                            </div>
+                            <canvas id="polar-chart" width="auto" height="auto"></canvas>
+
                         </div>
-                        <canvas id="polar-chart" width="auto" height="auto"></canvas>
-
+                        <div class="fluid-container well" id="slider"></div>
                     </div>
-                    <div class="fluid-container well" id="slider"></div>
-                </div>
 
-                <p>here or there...</p>
-                <p>find stories that will peak your interest...</p>
+                    <p>Here or there...</p>
+                    <p>Find stories that will peak your interest...</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <p>Group Project 1</p>
-    </div>
+        <div class="footer">
+            <p>Copyright @ 2018 Living Dashboard</p>
+        </div>
 
-    <script type="text/javascript" src="./javascript/apptest2.js"></script>
+        <script type="text/javascript" src="./javascript/apptest2.js"></script>
 
 </body>
 
