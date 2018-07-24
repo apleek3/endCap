@@ -1,19 +1,23 @@
 body{
     position: relative;
-    background-color:white;
-    color: #555;
+    background-color:orange;
+    color: black;
     font-family: "Open Sans","Verdana","sans-serif"
 }
 .jumbotron {
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGhI0tMnM9cg3vbMnf-y9QHff7DC99cGupcq5C_jzUI8MLPprs");
-    background-color: grey;
+    background-image: url("http://www.monaco-chicago.com/images/1700-960/chicago-skyline-f81e26ea.jpg");
+    background-color: orange;
     font-style: inherit;
     background-position: 0% 35%;
     background-size: cover;
     background-repeat: no-repeat;
-    color: white;
+    color: whitesmoke;
     font-weight: bolder;
     font-size: xx-large;
+    
+}
+* {
+	box-sizing: border-box;
 }
 p1{
     font-weight: bolder;
@@ -22,20 +26,41 @@ p1{
 }
 .container {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightblue;
+    background-color: orange;
+    margin: auto;
 }
 
 .col-sm-4 {
-    background-color: lightblue;
-    color: lightblue;
+    background-color: orange;
+    color: orange;
     font-stretch: expanded;
 }
+.col-sm-8 {
+    background-color: orange;
+    margin-bottom: auto;
+}
 .well {
-    background:gray;
+    background:orange;
     font-family:Arial, Helvetica, sans-serif;
 }
 .footer {
     text-align: center;
     font-weight: bolder;
     margin-bottom: auto;
+    margin-top: auto;
 }
+#slider{
+    background-color: black;
+}
+#accordion{
+    background-color: black;
+    background-clip: border-box;
+}
+#container {
+	min-height:auto;
+}
+.nav-item{
+    float: right;
+}
+
+
