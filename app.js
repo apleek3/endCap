@@ -26,18 +26,19 @@ var map;
         geocoder.geocode({ 'address': aName },
             function (results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
-                    alert("found location: " + aName,
-                        results[0].geometry.location);
+                    alert("found location: " + aName, results[0].geometry.location);
+
                     console.log(aName);
+                    console.log(results);
                     console.log(results[0].geometry.location);
                     console.log(results[0].geometry.location.lat());
                     console.log(results[0].geometry.location.lng());
-                    console.log(results);
                     console.log(results[0].address_components[0].long_name);
                     console.log(results[0].address_components[1].long_name);
                     console.log(results[0].address_components[3].long_name);
                     console.log(results[0].address_components[5].short_name);
                     console.log(results[0].address_components[7].short_name);
+
                     map.setCenter(results[0].geometry.location);
                 }
 
@@ -62,6 +63,34 @@ var map;
                 }).then(function (response) {
 
                     console.log(response);
+                    console.log("Walk Score: " + response.walkscore);
+                    console.log("Bike Score: " + response.bike.score);
+                    console.log("Transit Score: " + response.transit.score);
+
+                    new Chart($("#myChart"), {
+                        type: 'polarArea',
+                        data: {
+                            labels: ["Walkability", "Bikeability", "Transit"],
+                            datasets: [
+                                {
+                                    label: "Percentage Relative to Other Neighborhoods",
+                                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                                    data: [
+                                        response.walkscore,
+                                        response.bike.score,
+                                        response.transit.score
+                                    ],
+                                }
+                            ]
+                        },
+                        options: {
+                            title: {
+                                display: true,
+                                text: 'Living scores relative to similar neighborhoods'
+                            }
+                        }
+                    });
+
                 });
             });
     }
