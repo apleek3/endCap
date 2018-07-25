@@ -1,123 +1,298 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
-    <title>Endcap</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Endcap</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+    <!-- RESET CSS -->
     <link rel="stylesheet" href="./javascript/jquery-ui-1.12.1.custom/jquery-ui.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- JQUERY UI CSS FILE ; NEW TECHNOLOGY FOR ADDING DYNAMIC LOOK TO ELEMENTS; -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP CALL; REDUNDANT FOR NOW -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- BOOTSTRAP CALL; REDUNDANT FOR NOW -->
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
         crossorigin="anonymous"></script>
+    <!-- JQUERY UI JS FILE; NEW TECHNOLOGY FOR ADDING DYNAMIC FUNCTION TO ELEMENTS-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANh0YzZG-vsBwun96VJTXO6OGqnjIpzCE"></script>
+    <!-- GOOGLE API KEY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <!-- CHART.JS ; NEW TECHNOLOGY FOR MAKING DYNAMIC/REPEATING CHART ELEMENT -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <!-- LINK TO LOCAL BOOTSTRAP; REDUNDANT FOR NOW-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <!--<link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">-->
+    <!-- LINK TO FONT AWESOME LOCALLY-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900">
+    <!-- LINK TO GOOGLE FONTS-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <!-- LINK TO CSS-->
+
 </head>
 
 <body>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <h1>endCap</h1>
-        <p1>"See beyond the edges" in every neighorhood.</p1>
+
+    <section class="banner">
+        <div class="container text-center">
+            <div class="col-md-12">
+                <h1>Endcap</h1>
+                <p class="tagline">
+                    "See Beyond the Edges" in any Community.
+                </p>
+                <p>Enter a location name:
+                    <input id="address">
+                    <button id="addressBtn">Find!</button>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <header id="header">
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#where">Location
+                        <!--Or some better button/section name?-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
+                <!--Do we want this section/button? Name?-->
+                <li>
+                    <a href="#chart">Chart
+                        <!--Or some better button/section name?-->
+                    </a>
+                </li>
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+                <!--Do we want this section/button? Name?-->
+                <li>
+                    <a href="#team">Team</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container text-center">
+
+            <h2>Connecting Communities</h2>
+            <p>
+                <!--I'm working on actual content. Ideas are welcome.-->
+                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+            <div class="row stats-row">
+
+                <div class="stats-col text-center col-md-3 col-sm-6">
+                    <div class="circle">
+                        <span class="stats-no" data-toggle="counter-up">15
+                            <!--Dummy Number-->
+                        </span>Connected Communities
+                        <!--Dummy Title-->
+                    </div>
+                </div>
+
+                <div class="stats-col text-center col-md-3 col-sm-6">
+                    <div class="circle">
+                        <span class="stats-no" data-toggle="counter-up">79
+                            <!--Dummy Number-->
+                        </span>Transit Systems
+                        <!--Dummy Title-->
+                    </div>
+                </div>
+
+                <div class="stats-col text-center col-md-3 col-sm-6">
+                    <div class="circle">
+                        <span class="stats-no" data-toggle="counter-up">1,463
+                            <!--Dummy Number-->
+                        </span>Partnered Relocation Services
+                        <!--Dummy Title-->
+                    </div>
+                </div>
+
+                <div class="stats-col text-center col-md-3 col-sm-6">
+                    <div class="circle">
+                        <span class="stats-no" data-toggle="counter-up">273
+                            <!--Dummy Number-->
+                        </span>Mapped Biking Trails
+                        <!--Dummy Title-->
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" id="where" data-bg-img="assets/images/background_location.jpg"
+        data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+        <!--Get Map API Working-->
+        <h2>Your Neck of the Woods...</h2>
+        <p>
+            Something something something.
+            <!--Need tagline for this section.-->
+        </p>
+        <label for="lat">Latitude</label>
+        <input id="lat" name="lat" value="44.797">
+        <br>
+        <label for="lng">Longitude</label>
+        <input id="lng" name="lng" value="-93.278">
+        <div id="map"></div>
+        <div class="fakeimg">Google Maps</div>
+        <p>Where is this place you'll go?</p>
     </div>
 
-    <nav class="navbar navbar-inverse">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav">
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <section class="features" id="features">
+        <div class="container">
 
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <h3>Our team</h3>
-                <div class="well">
-                    <div id="accordion">
-                        <h3>What’s Your Neighborhood Walk Score?</h3>
-                        <div>
-                            <p>
-                                Walk Score helps you find a walkable place to live.Find out your walk score.
-                            </p>
-                        </div>
-                        <h3>Transportability Score</h3>
-                        <div>
-                            <p>
-                                Find out your transportability score in the area.
-                            </p>
-                        </div>
-                        <h3>Bikeability Score</h3>
-                        <div>
-                            <p>
-                                How Bikeable Is Your City? Find Out With Us.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <p>Interested in other pieces to this puzzle?</p>
-                <h3>Try these:</h3>
-                <p></p>
-            </div>
-            <div class="col-sm-8">
-                <div id="where">
-                    <h2>Where you'll be...</h2>
-                    <label for="lat">Latitude</label>
-                    <input id="lat" name="lat" value="44.797">
-                    <br>
-                    <label for="lng">Longitude</label>
-                    <input id="lng" name="lng" value="-93.278">
+            <h2 class="text-center">Features</h2>
 
-                    <div id="map"></div>
-                    <div class="fakeimg">Google maps</div>
-                    <p>Where is this place you'll go?</p>
-                    <br>
-                    <h2>End-score</h2>
-                    <h5>Click the buttons to see if there's more to this place</h5>
-                    <div class="fluid-container">
+            <div class="row">
 
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
                         <div>
-                            <div class="widget">
-                                <h1>Widget</h1>
-                                <button>Button with only text</button>
-                                <button>Button with icon only</button>
-                                <button>Button with icon on the left</button>
-                                <button>Button with icon on the right</button>
-                                <button>Button with icon on the top</button>
-                                <button>Button with icon on the bottom</button>
+                            <div class="feature-icon">
+                                <span class="fa fa-rocket"></span>
                             </div>
-                            <canvas id="polar-chart" width="auto" height="auto"></canvas>
-
                         </div>
-                        <div class="fluid-container well" id="slider"></div>
+                        <div>
+                            <h3>Local Industry</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
                     </div>
-
-                    <p>Here or there...</p>
-                    <p>Find stories that will peak your interest...</p>
                 </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-envelope"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Community Connections</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-bell"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Get Alerts</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
+
+            <div class="row">
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-database"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Something</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-cutlery"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Local Restaurants</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-dashboard"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Something Else</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div class="footer">
-            <p>Copyright @ 2018 Living Dashboard</p>
+    </section>
+
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" id="chart" data-bg-img="assets/images/background_chart.jpg"
+        data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
+        <!--chart.js technology-->
+        <h2>Is it easy to get around here?:</h2>
+        <p>
+            Add a chart to see:
+        </p>
+        <div class="fluid-container">
+            <div>
+                <div class="widget">
+                    <button>Button with only text</button>
+
+                </div class="fluid-container">
+                <canvas id="myChart" width="auto" height="auto" placeholder="Enter an address above to chart your next destination."></canvas>
+            </div>
+            <!-- <div class="fluid-container well" id="slider"></div>-->
         </div>
 
-        <script type="text/javascript" src="./javascript/apptest2.js"></script>
+    </div>
 
+    <script type="text/javascript" src="./javascript/app.js"></script>
 </body>
 
 </html>
