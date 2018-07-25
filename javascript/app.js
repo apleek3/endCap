@@ -1,3 +1,5 @@
+$(document).ready(function () {
+    console.log("Ready!");
 var map;
     var geocoder; // global variable
     google.maps.event.addDomListener(window, 'load', initialize);
@@ -15,9 +17,9 @@ var map;
     }
 
     // grab the search phrase from the input box
-    var button = document.querySelector("button");
+    var button = document.querySelector("#addressBtn");
     button.onclick = function () {
-        var locName = document.querySelector("input").value;
+        var locName = document.querySelector("#address").value;
         findLocation(locName);
     }
 
@@ -94,3 +96,5 @@ var map;
                 });
             });
     }
+
+});
