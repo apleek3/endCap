@@ -489,6 +489,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
 }
 
+#walk-cirlce {
+  border-color:#3e95cd;
+}
+#bike-circle {
+  border-color:#8e5ea2;
+}
+#transit-circle{
+  border-color: #3cba9f;
+}
+
 /* ==================================================
   Parallax Styling
   ================================================== */
@@ -971,4 +981,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+#myChart {
+  width: 100px;
 }
