@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Endcap</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"><!--Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"><!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"><!--Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900"><!--Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--Main Stylesheet-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- JQUERY -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- BOOTSTRAP CALL; REDUNDANT FOR NOW -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script><!-- JQUERY UI JS FILE; NEW TECHNOLOGY FOR ADDING DYNAMIC FUNCTION TO ELEMENTS-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANh0YzZG-vsBwun96VJTXO6OGqnjIpzCE"></script><!-- GOOGLE API KEY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script><!-- CHART.JS ; NEW TECHNOLOGY FOR MAKING DYNAMIC/REPEATING CHART ELEMENT -->
+</head>
+
+<body>
+
+    <section class="banner">
+        <div class="container text-center col-md-12">
+            <h1>Endcap</h1>
+            <p class="tagline">
+                See Beyond the Edges of Your Community
+            </p>
+        </div>
+    </section>
+
+    <header id="header">
+        <nav id="nav-menu-container">
+            <ul class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#chart">Chart</a></li>
+                <li><a href="#cta">Coming Soon</a></li>
+                <li><a href="#features">Features</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about" id="about">
+        <div class="container text-center">
+            <h2>Connecting Communities</h2>
+            <p><!--I'm working on actual content. Ideas are welcome.-->
+                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </section>
+
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" id="chart" data-bg-img="assets/images/background_location.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg"><!--Get Chart API Working-->
+
+        <h2>Some Chart Name</h2>
+
+        <p>
+            Hopefully this cart will one day represent some meaningful information. For now, it just looks cool.
+        </p>
+
+        <div class="md-col-6">
+            <p>
+                Enter a location name:
+                <input id="address">
+                <button id="addressBtn">Find!</button>
+            </p>
+        </div>
+
+        <div class="row stats-row">
+
+            <div class="stats-col text-center col-md-3 col-sm-6">
+                <div class="circle">
+                    <span class="stats-no" data-toggle="counter-up">232</span> Walkability Grade
+                </div>
+            </div>
+
+            <div class="stats-col text-center col-md-3 col-sm-6">
+                <div class="circle">
+                    <span class="stats-no" data-toggle="counter-up">79</span> Bikeability Grade
+                </div>
+            </div>
+
+            <div class="stats-col text-center col-md-3 col-sm-6">
+                <div class="circle">
+                    <span class="stats-no" data-toggle="counter-up">1,463</span> Transit Grade
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="chart-container" style="position: relative; height:auto; width:75%">
+        <canvas id="myChart" width="auto" height="auto"></canvas>
+    </div>
+
+    <br><br>
+
+    <section class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-sm-12 text-lg-left text-center">
+                    <h2>
+                        Coming Soon...
+                    </h2>
+                    <p>
+                        We are working hard to bring you the following new features very soon!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="text-center">Features</h2>
+            <div class="row">
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-map"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Mapping</h3>
+                            <p>
+                                Navigate your new neighborhood with our new mapping app.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-balance-scale"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Crime Statistics</h3>
+                            <p>
+                                How safe is your new neighborhood? Find out here!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-beer"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Need a Drink?</h3>
+                            <p>
+                                Let us help you find a local watering hole.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="row">
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-ban"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Title</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-ban"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Title</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feature-col col-lg-4 col-xs-12">
+                    <div class="card card-block text-center">
+                        <div>
+                            <div class="feature-icon">
+                                <span class="fa fa-ban"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Title</h3>
+                            <p>
+                                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12 text-lg-left text-center">
+                        <p class="copyright-text">Copyright © 2018 Endcap</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+    <!--JavaScript Libraries-->
+    <script src="assets/javascript/jquery.min.js"></script><!--jQuery JS-->
+    <script src="assets/javascript/jquery-migrate.min.js"></script><!--jQuery JS-->
+    <script src="assets/javascript/hoverIntent.js"></script><!--Hover Intent JS-->
+    <script src="assets/javascript/superfish.min.js"></script><!--Superfish JS-->
+    <script src="assets/javascript/tether.min.js"></script><!--Tether JS-->
+    <script src="assets/javascript/stellar.min.js"></script><!--Stellar JS-->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script><!--Bootstrap JS-->
+    <script src="assets/javascript/counterup.min.js"></script><!--Counter JS-->
+    <script src="assets/javascript/waypoints.min.js"></script><!--Waypoints JS-->
+    <script src="assets/javascript/easing.js"></script><!--Easing JS-->
+    <script src="assets/javascript/sticky.js"></script><!--Sticky JS-->
+    <script src="assets/javascript/parallax.js"></script><!--Parallax JS-->
+    <script src="assets/javascript/lockfixed.min.js"></script><!--Lock Fixed JS-->
+
+    <!--Javascript Files-->
+    <script src="assets/javascript/custom.js"></script>
+    <script src="assets/javascript/contactform.js"></script>
+
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+</body>
+</html>
