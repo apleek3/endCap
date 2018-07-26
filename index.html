@@ -60,30 +60,32 @@
         </p>
 
         <div class="md-col-6">
-            <p>
-                Enter a location name:
-                <input id="address">
-                <button id="addressBtn">Find!</button>
-            </p>
+            <div class="input-group input-group-lg">
+                <input type="text" id="address" class="form-control" placeholder="Please enter an address" aria-label="Address" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary btn-lg" id="addressBtn" type="button">Find!</button>
+                </div>
+            </div>
+            <div id="error"></div>
         </div>
 
         <div class="row stats-row">
 
             <div class="stats-col text-center col-md-3 col-sm-6">
                 <div class="circle">
-                    <span class="stats-no" data-toggle="counter-up">232</span> Walkability Grade
+                    <span id="stats-no-walk" class="stats-no" data-toggle="counter-up"></span> Walkability Grade
                 </div>
             </div>
 
             <div class="stats-col text-center col-md-3 col-sm-6">
                 <div class="circle">
-                    <span class="stats-no" data-toggle="counter-up">79</span> Bikeability Grade
+                    <span id="stats-no-bike" class="stats-no" data-toggle="counter-up"></span> Bikeability Grade
                 </div>
             </div>
 
             <div class="stats-col text-center col-md-3 col-sm-6">
                 <div class="circle">
-                    <span class="stats-no" data-toggle="counter-up">1,463</span> Transit Grade
+                    <span id="stats-no-transit" class="stats-no" data-toggle="counter-up"></span> Transit Grade
                 </div>
             </div>
 
@@ -124,7 +126,7 @@
                                 <span class="fa fa-map"></span>
                             </div>
                         </div>
-                        <div>
+                        <div id="map">
                             <h3>Mapping</h3>
                             <p>
                                 Navigate your new neighborhood with our new mapping app.
@@ -253,7 +255,7 @@
     <script src="assets/javascript/custom.js"></script>
     <script src="assets/javascript/contactform.js"></script>
 
-    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    <script type="text/javascript" src="./javascript/app.js"></script>
 
 </body>
 </html>
