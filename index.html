@@ -7,26 +7,37 @@
 
     <title>Endcap</title>
 
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"><!--Reset CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"><!--Bootstrap CSS-->
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"><!--Font Awesome CSS-->
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900"><!--Google Fonts-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"><!--Main Stylesheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--Reset CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!--Font Awesome CSS-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900">
+    <!--Google Fonts-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!--Main Stylesheet-->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script><!-- JQUERY -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><!-- BOOTSTRAP CALL; REDUNDANT FOR NOW -->
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script><!-- JQUERY UI JS FILE; NEW TECHNOLOGY FOR ADDING DYNAMIC FUNCTION TO ELEMENTS-->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANh0YzZG-vsBwun96VJTXO6OGqnjIpzCE"></script><!-- GOOGLE API KEY -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script><!-- CHART.JS ; NEW TECHNOLOGY FOR MAKING DYNAMIC/REPEATING CHART ELEMENT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- JQUERY -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- BOOTSTRAP CALL; REDUNDANT FOR NOW -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <!-- JQUERY UI JS FILE; NEW TECHNOLOGY FOR ADDING DYNAMIC FUNCTION TO ELEMENTS-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANh0YzZG-vsBwun96VJTXO6OGqnjIpzCE"></script>
+    <!-- GOOGLE API KEY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
+    <!-- CHART.JS ; NEW TECHNOLOGY FOR MAKING DYNAMIC/REPEATING CHART ELEMENT -->
 </head>
 
 <body>
 
     <section class="banner">
         <div class="container text-center col-md-12">
-            <h1>Endcap</h1>
+            <h1>endCap</h1>
             <p class="tagline">
-                See Beyond the Edges of Your Community
+                "See Beyond the Edge" in any Community
             </p>
         </div>
     </section>
@@ -34,33 +45,41 @@
     <header id="header">
         <nav id="nav-menu-container">
             <ul class="nav-menu">
-                <li><a href="#about">About</a></li>
-                <li><a href="#chart">Chart</a></li>
-                <li><a href="#soon">Coming Soon</a></li>
-                <li><a href="#features">Features</a></li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#chart">Chart</a>
+                </li>
+                <li>
+                    <a href="#soon">Coming Soon</a>
+                </li>
+                <li>
+                    <a href="#features">Features</a>
+                </li>
             </ul>
         </nav>
     </header>
 
     <section class="about" id="about">
         <div class="container text-center">
-            <h2>Connecting Communities</h2>
-            <p><!--I'm working on actual content. Ideas are welcome.-->
-                Does Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <h2>Looking to relocate?</h2>
+            <p>
+                We can help you get around. endCap will give a brief overview of living values that beyond rising rent, restaurant ratings,
+                and retail repetitiveness. Want to know if it's easy to get around? Try out our graphic below. More items
+                of value coming soon.
             </p>
+            <div id="map"></div>
         </div>
     </section>
 
-    <div class="block bg-primary block-pd-lg block-bg-overlay text-center" id="chart" data-bg-img="assets/images/background_location.jpg" data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg"><!--Get Chart API Working-->
+    <div class="block bg-primary block-pd-lg block-bg-overlay text-center chartStyle" id="chart" data-bg-img="./assets/images/background_location.png"
+        data-settings='{"stellar-background-ratio": 0.6}' data-toggle="parallax-bg">
 
-        <h2>Some Chart Name</h2>
 
-        <p>
-            Hopefully this cart will one day represent some meaningful information. For now, it just looks cool.
-        </p>
-
-        <div class="md-col-6">
-            <div class="input-group input-group-lg">
+        <h2 class="chartStyle">Type in a place and see how easy it is to get around.</h2>
+        <div class="md-col-3">
+            <div class="input-group input-group-md">
                 <input type="text" id="address" class="form-control" placeholder="Please enter an address" aria-label="Address" aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class="btn btn-outline-secondary btn-lg" id="addressBtn" type="button">Find!</button>
@@ -68,36 +87,41 @@
             </div>
             <div id="error"></div>
         </div>
-
+        <p class="chartStyle">
+           How easy is it to get around here?
+        </p>
         <div class="row stats-row">
-
-            <div class="stats-col text-center col-md-3 col-sm-6">
-                <div class="circle">
-                    <span id="stats-no-walk" class="stats-no" data-toggle="counter-up"></span> Walkability Grade
-                </div>
-            </div>
-
-            <div class="stats-col text-center col-md-3 col-sm-6">
-                <div class="circle">
+            <div class="stats-col text-center col-md-4 col-sm-12">
+                <div id="bike-circle" class="circle chartStyle">
                     <span id="stats-no-bike" class="stats-no" data-toggle="counter-up"></span> Bikeability Grade
                 </div>
             </div>
 
-            <div class="stats-col text-center col-md-3 col-sm-6">
-                <div class="circle">
+            <div class="stats-col text-center col-md-4 col-sm-12">
+                <div id="walk-circle" class="circle chartStyle">
+                    <span id="stats-no-walk" class="stats-no" data-toggle="counter-up"></span> Walkability Grade
+                </div>
+            </div>
+            <div class="stats-col text-center col-md-4 col-sm-12">
+                <div id="transit-circle" class="circle chartStyle">
                     <span id="stats-no-transit" class="stats-no" data-toggle="counter-up"></span> Transit Grade
                 </div>
             </div>
 
         </div>
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-1">
+            </div>
+            <div class="col-lg-10 col-md-10 col-sm-10 chart-container">
+                <canvas id="myChart" width="auto" height="auto"></canvas>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1">
+            </div>
+        </div>
 
     </div>
-
-    <div class="chart-container" style="position: relative; height:auto; width:75%">
-        <canvas id="myChart" width="auto" height="auto"></canvas>
-    </div>
-
-    <br><br>
+    <br>
+    <br>
 
     <section class="cta" id="soon">
         <div class="container">
@@ -126,7 +150,7 @@
                                 <span class="fa fa-map"></span>
                             </div>
                         </div>
-                        <div id="map">
+                        <div>
                             <h3>Mapping</h3>
                             <p>
                                 Navigate your new neighborhood with our new mapping app.
@@ -234,22 +258,37 @@
         </div>
     </footer>
 
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+    <a class="scrolltop" href="#">
+        <span class="fa fa-angle-up"></span>
+    </a>
 
     <!--JavaScript Libraries-->
-    <script src="assets/javascript/jquery.min.js"></script><!--jQuery JS-->
-    <script src="assets/javascript/jquery-migrate.min.js"></script><!--jQuery JS-->
-    <script src="assets/javascript/hoverIntent.js"></script><!--Hover Intent JS-->
-    <script src="assets/javascript/superfish.min.js"></script><!--Superfish JS-->
-    <script src="assets/javascript/tether.min.js"></script><!--Tether JS-->
-    <script src="assets/javascript/stellar.min.js"></script><!--Stellar JS-->
-    <script src="assets/javascript/bootstrap.bundle.min.js"></script><!--Bootstrap JS-->
-    <script src="assets/javascript/counterup.min.js"></script><!--Counter JS-->
-    <script src="assets/javascript/waypoints.min.js"></script><!--Waypoints JS-->
-    <script src="assets/javascript/easing.js"></script><!--Easing JS-->
-    <script src="assets/javascript/sticky.js"></script><!--Sticky JS-->
-    <script src="assets/javascript/parallax.js"></script><!--Parallax JS-->
-    <script src="assets/javascript/lockfixed.min.js"></script><!--Lock Fixed JS-->
+    <script src="assets/javascript/jquery.min.js"></script>
+    <!--jQuery JS-->
+    <script src="assets/javascript/jquery-migrate.min.js"></script>
+    <!--jQuery JS-->
+    <script src="assets/javascript/hoverIntent.js"></script>
+    <!--Hover Intent JS-->
+    <script src="assets/javascript/superfish.min.js"></script>
+    <!--Superfish JS-->
+    <script src="assets/javascript/tether.min.js"></script>
+    <!--Tether JS-->
+    <script src="assets/javascript/stellar.min.js"></script>
+    <!--Stellar JS-->
+    <script src="assets/javascript/bootstrap.bundle.min.js"></script>
+    <!--Bootstrap JS-->
+    <script src="assets/javascript/counterup.min.js"></script>
+    <!--Counter JS-->
+    <script src="assets/javascript/waypoints.min.js"></script>
+    <!--Waypoints JS-->
+    <script src="assets/javascript/easing.js"></script>
+    <!--Easing JS-->
+    <script src="assets/javascript/sticky.js"></script>
+    <!--Sticky JS-->
+    <script src="assets/javascript/parallax.js"></script>
+    <!--Parallax JS-->
+    <script src="assets/javascript/lockfixed.min.js"></script>
+    <!--Lock Fixed JS-->
 
     <!--Javascript Files-->
     <script src="assets/javascript/custom.js"></script>
@@ -258,4 +297,5 @@
     <script type="text/javascript" src="./javascript/app.js"></script>
 
 </body>
+
 </html>

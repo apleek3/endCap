@@ -983,6 +983,35 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-#myChart {
-  width: 100px;
+
+
+.chartStyle {
+  color: black !important;
+  font-weight: 1000;
+
+}
+
+.input-group {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#chart {
+  height: 1150px;
+}
+
+#error1 {
+  color: red;
+  font-size: 12px;
+  font-weight: 1000;
+}
+
+#walk-cirlce {
+  border-color:#3e95cd;
+}
+#bike-circle {
+  border-color:#8e5ea2;
+}
+#transit-circle{
+  border-color: #3cba9f;
 }
