@@ -5,10 +5,10 @@ $(document).ready(function () {
         return Math.round(Math.random() * 100);
     };
     $(".stats-no").empty()
-
-    var randomWalk = randomScalingFactor(); //storing the random numbers as useable global variables
-    var randomBike = randomScalingFactor();
-    var randomTransit = randomScalingFactor();
+    
+    var randomWalk = 0; //randomScalingFactor(); //storing the random numbers as useable global variables
+    var randomBike = 0; //randomScalingFactor();
+    var randomTransit = 0; //randomScalingFactor();
 
     $("#stats-no-walk").html(randomWalk); //adding the random numbers to the page
     $("#stats-no-bike").html(randomBike);
@@ -21,7 +21,7 @@ $(document).ready(function () {
             labels: ["Walkability", "Bikeability", "Transit"],
             datasets: [
                 {
-                    label: "See % Score relative to other cities below",
+                    label: " % Score relative to other cities ",
                     backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
                     data: [
                         randomWalk,
@@ -34,7 +34,7 @@ $(document).ready(function () {
         options: {
             title: {
                 display: true,
-                text: "See % Score relative to other cities below"
+                text: " % Score relative to other cities "
             }
         }
     });
@@ -154,7 +154,7 @@ $(document).ready(function () {
                             labels: ["Walkability", "Bikeability", "Transit"],
                             datasets: [
                                 {
-                                    label: "See % Score relative to other cities below",
+                                    label: " % Score relative to other cities ",
                                     backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
                                     data: [
                                         response.walkscore,
@@ -167,7 +167,7 @@ $(document).ready(function () {
                         options: {
                             title: {
                                 display: true,
-                                text: "See % Score relative to other cities below"
+                                text: " % Score relative to other cities "
                             }
                         }
                     });
